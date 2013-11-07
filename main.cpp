@@ -16,6 +16,32 @@ struct Children {
     int Serezha;
 };
 
+/**
+ * Return the number of cranes for each child
+ * 
+ * @param number The number of cranes
+ * @return The number of cranes for each child
+ */
+
+/*
+ x + y + z = a (1)
+x + z = y/2 (2)
+x = z
+
+(1): z + y + z = a
+2*z + y = a
+2*z = a - y
+(2): z + z = y/2
+2*z = y/2
+z = y/4
+
+a - y = y/2
+y + y/2 = a
+y*3/2 = a
+y = a*2/3
+
+x = z = y/4 = a/6
+ */
 Children cranes(int number) {
     Children c;
     
